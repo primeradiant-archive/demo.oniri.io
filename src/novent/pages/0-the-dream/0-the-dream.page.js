@@ -14,8 +14,8 @@ NoventEngine.novent().page(0, "The Dream", {
   crackSound: 'sounds/crack.mp3',
   whisper: 'sounds/whisper.mp3',
   iceCrack: 'sounds/ice_crack.mp3',
-  theDream: 'musics/The_Dream.wav',
-  thePortrait: 'musics/The_Portrait.wav'
+  theDream: 'musics/The_Dream.mp3',
+  thePortrait: 'musics/The_Portrait.mp3'
 }, function(container, page) {
   page.scope.particleType = true;
   for(var i = 0; i < 100; i++)
