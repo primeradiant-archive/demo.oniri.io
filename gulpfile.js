@@ -65,7 +65,7 @@ function compilePreviewPage() {
 }
 
 function compress() {
-  return gulp.src('target/site/**/*')
+  return gulp.src(['!target/site/**/*.html', 'target/site/**/*'])
   .pipe(zip('novent.zip'))
   .pipe(gulp.dest('target'))
 }
