@@ -1,4 +1,4 @@
-NoventEngine.novent(1080, 1920);
+NoventEngine.novent(720, 1280);
 
 NoventEngine.novent().page(0, "page 0", {
   smoke: 'images/smoke.png',
@@ -10,34 +10,34 @@ NoventEngine.novent().page(0, "page 0", {
     createParticle();
 
   page.scope.portrait = new createjs.Bitmap(page.lib.portrait);
-  page.scope.portrait.regX = 960;
-  page.scope.portrait.regY = 540;
-  page.scope.portrait.x = 960;
-  page.scope.portrait.y = 540;
+  page.scope.portrait.regX = 640;
+  page.scope.portrait.regY = 360;
+  page.scope.portrait.x = 640;
+  page.scope.portrait.y = 360;
   page.scope.portrait.scaleX = 0.8;
   page.scope.portrait.scaleY = 0.8;
   page.scope.portrait.alpha = 0;
   container.addChild(page.scope.portrait);
 
   page.scope.smoke1 = new createjs.Bitmap(page.lib.smoke);
-  page.scope.smoke1.x = - 300;
+  page.scope.smoke1.x = 0;
   page.scope.smoke1.alpha = 0;
   container.addChild(page.scope.smoke1);
 
   page.scope.smoke2 = new createjs.Bitmap(page.lib.smoke);
-  page.scope.smoke2.x = - 600;
+  page.scope.smoke2.x = - 100;
   page.scope.smoke2.alpha = 0;
   container.addChild(page.scope.smoke2);
 
   page.scope.smoke3 = new createjs.Bitmap(page.lib.smoke);
-  page.scope.smoke3.x = - 900;
+  page.scope.smoke3.x = - 200;
   page.scope.smoke3.alpha = 0;
   container.addChild(page.scope.smoke3);
 
   function createParticle() {
     var particle = new createjs.Bitmap(page.lib.particle);
-    particle.x = Math.abs(Math.random()*1920);
-    particle.y = 1090;
+    particle.x = Math.abs(Math.random()*1280);
+    particle.y = 730;
     var test = Math.round(Math.random());
     if(test === 0)
       container.addChildAt(particle, container.getChildIndex(page.scope.portrait));
