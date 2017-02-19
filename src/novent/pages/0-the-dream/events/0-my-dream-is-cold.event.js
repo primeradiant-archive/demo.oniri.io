@@ -1,6 +1,6 @@
 NoventEngine.novent().page(0).event(0, function(container, page, resolve) {
     page.scope.theDream = createjs.Sound.play("theDream");
-    page.scope.theDream.loop = true;
+    page.scope.theDream.loop = -1;
     page.scope.theDream.volume = 0.5;
 
     createjs.Tween.get(page.scope.smoke1, {loop: true}).to({y: -150, alpha: 0.7}, 2000).to({y: -300, alpha: 0}, 2000);

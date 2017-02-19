@@ -2,7 +2,7 @@ NoventEngine.novent().page(1).event(0, function(container, page, resolve) {
   createjs.Tween.get(page.scope.sky).to({x: -500, y: -250}, 10000);
 
   page.scope.wind = createjs.Sound.play("wind");
-  page.scope.wind.loop = true;
+  page.scope.wind.loop = -1;
 
   createjs.Tween.get(page.scope.eye1).wait(500).call(function() {
     createjs.Tween.get(page.scope.eye2).to({y: -1080}, 1500);
