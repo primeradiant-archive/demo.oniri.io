@@ -34,7 +34,7 @@ NoventEngine.novent().page(1).event(1, function(container, page, resolve) {
   createjs.Tween.get(page.scope.lanigFull).wait(8500).call(function() {
     page.scope.theMemories = new createjs.Container();
     var theMemoriesText = "\t\t\t\tThe memories are coming back to him. The Cult wanting to kill all Necromancers, the mercenaries pursuing him for days, the exhaustion, the fall. Under the merciless sun, his muscles and mind are paralysed by heat and fear. Feeling the hot sand in his hands, his sweat running down his brow, Lanig struggles to come back to his senses.";
-    justifyText(page.scope.theMemories, theMemoriesText, "500 26px Halant", 34, 800, "#000000");
+    justifyText(page.scope.theMemories, theMemoriesText, "500 26px PT Serif", 34, 800, "#000000");
     page.scope.theMemories.x = 100;
     page.scope.theMemories.y = 150;
     page.scope.theMemories.alpha = 0;

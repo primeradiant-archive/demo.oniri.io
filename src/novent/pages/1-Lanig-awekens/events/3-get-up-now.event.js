@@ -15,7 +15,10 @@ NoventEngine.novent().page(1).event(3, function(container, page, resolve) {
 
   createjs.Tween.get(page.scope.getUpNow).to({alpha: 1}, 1500).call(function() {
     createjs.Tween.get(page.scope.getUpNow).wait(1000).call(function() {
-      createjs.Tween.get(page.scope.whiteScreen).to({alpha: 1}, 1500).call(function() {
+      createjs.Tween.get(page.scope.awakening).to({volume: 0}, 2500).call(function() {
+        page.scope.awakening.stop();
+      });
+      createjs.Tween.get(page.scope.whiteScreen).to({alpha: 1}, 2500).call(function() {
         resolve();
       });
     });

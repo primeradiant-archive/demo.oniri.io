@@ -10,7 +10,7 @@ NoventEngine.novent().page(2).event(0, function(container, page, resolve) {
 
   page.scope.theCultGives = new createjs.Container();
   var theIdeaText = "\t\t\t\tThe Cult pays them too well. Lanig knows it. He knows that whoever brings a Necromancer's eyes to a priest will become rich. Lanig is shaking. He will always have to run, always have to fight. Despite the fear, he stares at his pursuers with a defiant look, remembering the old promise he has been making to himself for decades.";
-  justifyText(page.scope.theCultGives, theIdeaText, "500 26px Halant", 34, 810, "#000000");
+  justifyText(page.scope.theCultGives, theIdeaText, "500 26px PT Serif", 34, 810, "#000000");
   page.scope.theCultGives.x = 900;
   page.scope.theCultGives.y = 560;
   page.scope.theCultGives.alpha = 0;

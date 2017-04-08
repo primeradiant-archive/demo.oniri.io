@@ -8,6 +8,11 @@ NoventEngine.novent().page(1).event(0, function(container, page, resolve) {
     createjs.Tween.get(page.scope.eye2).to({y: -1080}, 1500);
     createjs.Tween.get(page.scope.eye1).to({y: 1080}, 1500).call(function() {
       createjs.Tween.get(page.scope.eye1).wait(500).call(function() {
+        page.scope.awakening = createjs.Sound.play("awakening");
+        page.scope.awakening.volume = 0;
+        page.scope.awakening.loop = -1;
+
+        createjs.Tween.get(page.scope.awakening).to({volume: 0.5}, 1500);
         createjs.Tween.get(page.scope.whereAmI).to({alpha: 1}, 1500);
       });
       createjs.Tween.get(page.scope.eye1).wait(6000).call(function() {

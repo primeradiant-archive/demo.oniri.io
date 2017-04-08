@@ -27,17 +27,19 @@ NoventEngine.novent().page(2).event(1, function(container, page, resolve) {
   });
 
   page.scope.mainTheme = createjs.Sound.play("mainTheme");
-  page.scope.mainTheme.volume = 0.5;
+  page.scope.mainTheme.volume = 0;
 
-  createjs.Tween.get(page.scope.survive).to({alpha: 1}, 3000).call(function() {
-    createjs.Tween.get(page.scope.survive).wait(10000).call(function()  {
-      createjs.Tween.get(page.scope.survive).to({alpha: 0}, 2000);
-      createjs.Tween.get(page.scope.theyWontStop).to({alpha: 0}, 2000);
-      createjs.Tween.get(page.scope.theCultGives).to({alpha: 0}, 2000).call(function() {
-        createjs.Tween.get(page.scope.title).wait(6500).call(function() {
-          createjs.Tween.get(page.scope.title).to({alpha: 1}, 3000).call(function() {
-            createjs.Tween.get(page.scope.title).wait(15000).call(function() {
-              createjs.Tween.get(page.scope.blackScreen).to({alpha: 1}, 2000).call(resolve);
+  createjs.Tween.get(page.scope.mainTheme).to({volume: 0.5}, 1000).call(function() {
+    createjs.Tween.get(page.scope.survive).to({alpha: 1}, 3000).call(function() {
+      createjs.Tween.get(page.scope.survive).wait(4000).call(function()  {
+        createjs.Tween.get(page.scope.survive).to({alpha: 0}, 2000);
+        createjs.Tween.get(page.scope.theyWontStop).to({alpha: 0}, 2000);
+        createjs.Tween.get(page.scope.theCultGives).to({alpha: 0}, 2000).call(function() {
+          createjs.Tween.get(page.scope.title).wait(1000).call(function() {
+            createjs.Tween.get(page.scope.title).to({alpha: 1}, 3000).call(function() {
+              createjs.Tween.get(page.scope.title).wait(15000).call(function() {
+                createjs.Tween.get(page.scope.blackScreen).to({alpha: 1}, 2000).call(resolve);
+              });
             });
           });
         });

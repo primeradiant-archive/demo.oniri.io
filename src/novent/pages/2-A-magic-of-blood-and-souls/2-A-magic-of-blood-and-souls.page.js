@@ -4,7 +4,7 @@ NoventEngine.novent().page(2, "A Magic of Blood and Souls", {
   dust: 'images/dust.png',
   dust2: 'images/dust2.png',
   mercenaries: 'images/mercenaries.png',
-  mainTheme: "musics/Sho_s_Waltz.mp3"
+  mainTheme: "musics/Main_Theme.mp3"
 }, function(container, page) {
   page.scope.cover = new createjs.Bitmap(page.lib.cover);
   page.scope.cover.regX = 960;

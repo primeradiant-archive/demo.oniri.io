@@ -7,7 +7,8 @@ NoventEngine.novent().page(1, "Lanig awakens", {
   awake: 'images/awake.jpg',
   lanigFull: 'images/lanigFull.png',
   heartBeat: 'sounds/heart.mp3',
-  wind: 'sounds/desert-wind.mp3'
+  wind: 'sounds/desert-wind.mp3',
+  awakening: 'musics/Awakening.mp3'
 }, function(container, page) {
   page.scope.sky = new createjs.Bitmap(page.lib.sky);
   page.scope.sky.x = 0;
@@ -62,7 +63,7 @@ NoventEngine.novent().page(1, "Lanig awakens", {
   page.scope.eyesOpen.alpha = 0;
   container.addChild(page.scope.eyesOpen);
 
-  page.scope.lanigAwakens = new createjs.Text("Lanig awakens.", "500 24px Halant", "#000000");
+  page.scope.lanigAwakens = new createjs.Text("Lanig awakens.", "500 24px PT Serif", "#000000");
 	page.scope.lanigAwakens.maxWidth = 1000;
 	page.scope.lanigAwakens.textAlign = "center";
 	page.scope.lanigAwakens.textBaseline = "middle";
@@ -71,7 +72,7 @@ NoventEngine.novent().page(1, "Lanig awakens", {
   page.scope.lanigAwakens.alpha = 0;
 	container.addChild(page.scope.lanigAwakens);
 
-  page.scope.asHeOpens = new createjs.Text("As he opens his black eyes, a feeling of pure fear flows through his chest.", "500 24px Halant", "#000000");
+  page.scope.asHeOpens = new createjs.Text("As he opens his black eyes, a feeling of pure fear flows through his chest.", "500 24px PT Serif", "#000000");
 	page.scope.asHeOpens.maxWidth = 1000;
 	page.scope.asHeOpens.textAlign = "center";
 	page.scope.asHeOpens.textBaseline = "middle";
